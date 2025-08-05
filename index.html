@@ -79,40 +79,94 @@
     }
 
     .project-card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .project-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 300px;
+      text-align: center; 
     }
 
     .project-card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
 
     .project-card h3 {
-      padding: 15px 10px 5px;
+      font-size: 20px;
+      margin: 10px 0;
     }
 
     .project-card a {
-      display: inline-block;
-      margin: 10px;
-      color: #2980b9;
-      font-weight: bold;
       text-decoration: none;
+      color: #ffffff;
+      background-color: #007bff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
     }
 
     .project-card a:hover {
-      text-decoration: underline;
+      background-color: #0056b3;
     }
+
+    /* Certificate*/
+   .certifications {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Container wrap all cards */
+.cert-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Card style */
+.cert-card {
+  display: flex;
+  align-items: center;
+  width: 30%; /* chiếm khoảng 30% mỗi card */
+  min-width: 280px;
+  max-width: 320px;
+  background-color: #f5f5f5;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  gap: 16px;
+}
+
+/* Image style */
+.cert-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Text style */
+.cert-card p {
+  margin: 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+
+
+/* Footer*/
 
     footer {
       background-color: #2c3e50;
@@ -240,6 +294,40 @@
       <a href="https://github.com/IlovePHO/Chatbot_to_web_with_Python_and_JS/tree/main" target="_blank">View more</a>
     </div>
   </section>
+
+  <!-- Certificate -->
+  <section class="certifications">
+      <h2 class="section-title">Certifications</h2>
+
+  <div class="cert-container">
+    <div class="cert-card">
+      <img src="./img/microsoft.png" alt="Certificate 1">
+      <p>Career Essentials in Data Analysis by Microsoft and LinkedIn</p>
+    </div>
+
+    <div class="cert-card">
+      <img src="./img/linkedin.png" alt="Certificate 2">
+      <p>LinkedIn Data Scientist</p>
+    </div>
+
+    <div class="cert-card">
+      <img src="./img/aws.png" alt="Certificate 3">
+      <p>AWS Cloud Practitioner Essentials</p>
+    </div>
+
+    <div class="cert-card">
+      <img src="./img/freecodecamp.jpg" alt="Certificate 4">
+      <p>FreeCodeCamp Front-End Development</p>
+    </div>
+
+    <div class="cert-card">
+      <img src="./img/docker.png" alt="Certificate 5">
+      <p>Docker Foundations Professional Certificate</p>
+    </div>
+  </div>
+</section>
+
+
 
   <!-- SOCIAL FOOTER -->
   <footer>
